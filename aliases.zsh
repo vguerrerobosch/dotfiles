@@ -35,3 +35,6 @@ alias push="git push"
 # alias stash="git stash -u"
 # alias unstage="git restore --staged ."
 alias wip="commit wip"
+
+# Other
+alias rmail="sudo rm /var/mail/$USER"
