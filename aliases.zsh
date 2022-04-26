@@ -35,6 +35,7 @@ alias push="git push"
 # alias stash="git stash -u"
 # alias unstage="git restore --staged ."
 alias wip="commit wip"
+alias nah="git clean -fd && git reset --hard HEAD"
 
 # Other
-alias rmail="sudo rm /var/mail/$USER"
+alias killmail="sudo rm /var/mail/$USER"
