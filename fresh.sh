@@ -35,6 +35,9 @@ pecl install imagick redis swoole
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/valet
 
+# Remove "Last login" message for new tabs in terminal
+touch $HOME/.hushlogin
+
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
