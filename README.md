@@ -2,6 +2,14 @@
 
 Credits: https://github.com/driesvints/dotfiles
 
+### Backup your data
+
+- Commit and push any changes/branches to your git repositories
+- Save all important documents from non-iCloud directories
+- Save all of your work from apps which aren't synced through iCloud
+- Export important data from your local database
+- Update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`
+
 ## Setting up your Mac
 
 After backing up your old Mac you may now follow these install instructions to setup a new one.
