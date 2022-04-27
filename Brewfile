@@ -22,6 +22,7 @@ brew 'stripe/stripe-cli/stripe'
 brew 'stripe/stripe-mock/stripe-mock'
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
+brew 'wp-cli'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
