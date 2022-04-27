@@ -39,7 +39,7 @@ brew 'composer'
 brew 'imagemagick'
 brew 'mysql'
 brew 'nginx'
-brew 'node'
+brew 'node@16'
 brew 'redis'
 
 # Apps
