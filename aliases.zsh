@@ -1,5 +1,5 @@
 # Shortcuts
-alias copyssh="pbcopy < $HOME/.ssh/id_ed25519"
+alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias c="clear"
 
 # Directories
