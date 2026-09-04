@@ -5,7 +5,7 @@ export DOTFILES=$HOME/.dotfiles
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Load dotfiles config files
-for file in $DOTFILES/*.zsh; do
+for file in "$DOTFILES"/*.zsh; do
   source "$file"
 done
 
@@ -21,9 +21,7 @@ SAVEHIST=10000
 HISTFILE=~/.zsh_history
 setopt HIST_IGNORE_DUPS
 setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
 
-# History timestamp format
-HIST_STAMPS="dd/mm/yyyy"
-
-# Working directory
-cd ~/Sites
+# Change to Sites directory for new interactive shells
+[[ -o interactive ]] && cd ~/Sites

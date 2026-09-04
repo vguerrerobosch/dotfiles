@@ -38,7 +38,7 @@ After backing up your old Mac you may now follow these install instructions to s
 
 6. Open **Herd** from your Applications folder and install the PHP versions you need.
 
-7. In Herd, configure any sites that use a non-default web root (e.g. `/public` for WordPress projects).
+7. In Herd, configure any sites that use a non-default web root.
 
 8. Restart your Mac.
 
