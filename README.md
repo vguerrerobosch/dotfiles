@@ -6,33 +6,40 @@ Credits: https://github.com/driesvints/dotfiles
 
 - Commit and push any changes/branches to your git repositories
 - Save all important documents from non-iCloud directories
-- Save all of your work from apps which aren't synced through iCloud
-- Export important data from your local database
-- Update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`
+- Export important data from your local databases
 
 ## Setting up your Mac
 
-After backing up your old Mac you may now follow these install instructions to setup a new one.
+After backing up your old Mac you may now follow these install instructions to set up a new one.
 
-1. Update macOS to the latest version through system preferences
-2. [Generate a new public and private SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) by running:
+1. Update macOS to the latest version through System Preferences.
+
+2. Generate a new SSH key by running:
 
    ```zsh
-   curl https://raw.githubusercontent.com/vguerrerobosch/dotfiles/HEAD/ssh.sh | sh -s "<your-email-address>"
+   curl https://raw.githubusercontent.com/vguerrerobosch/dotfiles/HEAD/ssh.sh | sh -s "your@email.com"
    ```
 
-3. Clone this repo to `~/.dotfiles` with:
+   Then [add the public key to GitHub](https://github.com/settings/keys) and any other services (GitLab, etc.).
 
-    ```zsh
-    git clone https://github.com/vguerrerobosch/dotfiles.git ~/.dotfiles
-    ```
+3. Clone this repo to `~/.dotfiles`:
 
-4. Run the installation with:
+   ```zsh
+   git clone git@github.com:vguerrerobosch/dotfiles.git ~/.dotfiles
+   ```
 
-    ```zsh
-    ~/.dotfiles/fresh.sh
-    ```
+4. Update `gitconfig` with your name and email.
 
-5. Restart your computer to finalize the process
+5. Run the installation:
+
+   ```zsh
+   ~/.dotfiles/fresh.sh
+   ```
+
+6. Open **Herd** from your Applications folder and install the PHP versions you need.
+
+7. In Herd, configure any sites that use a non-default web root.
+
+8. Restart your Mac.
 
 Your Mac is now ready to use!
