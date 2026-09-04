@@ -41,20 +41,6 @@ eval "$(fnm env)"
 fnm install --lts
 fnm default "$(fnm current)"
 
-# Set default MySQL root password and auth type.
-if mysql -u root --connect-expired-password -e "" 2>/dev/null; then
-  echo "Set a MySQL root password:"
-  read -rs MYSQL_ROOT_PASSWORD
-  echo ""
-  MYSQL_OPTS_FILE="$(mktemp)"
-  printf "[client]\npassword=%s\n" "${MYSQL_ROOT_PASSWORD//\'/\\\'}" > "$MYSQL_OPTS_FILE"
-  mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY '${MYSQL_ROOT_PASSWORD//\'/\'\'}'; FLUSH PRIVILEGES;"
-  rm -f "$MYSQL_OPTS_FILE"
-  unset MYSQL_ROOT_PASSWORD
-else
-  echo "MySQL root already has a password set — skipping."
-fi
-
 # Install global Composer packages
 composer global require laravel/installer
 

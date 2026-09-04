@@ -19,7 +19,6 @@ brew 'gifsicle'
 brew 'composer'
 brew 'fnm' # Fast Node Manager
 brew 'imagemagick'
-brew 'mysql'
 
 # Apps
 cask 'citrix-workspace'
