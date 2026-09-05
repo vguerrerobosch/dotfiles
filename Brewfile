@@ -1,6 +1,3 @@
-# Taps
-tap 'homebrew/cask-fonts'
-
 # Binaries
 brew 'gh'
 brew 'git'
@@ -32,7 +29,6 @@ cask 'imageoptim'
 cask 'iterm2'
 cask 'karabiner-elements'
 cask 'notion'
-cask 'onedrive'
 cask 'poedit'
 cask 'sequel-ace'
 cask 'spotify'
@@ -51,7 +47,4 @@ cask 'font-fira-code'
 cask 'font-inter'
 
 # Mac App Store
-mas 'Keynote', id: 409183694
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
 mas 'Bear', id: 1091189122
