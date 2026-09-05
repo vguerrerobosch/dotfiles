@@ -25,3 +25,11 @@ setopt EXTENDED_HISTORY
 
 # Change to Sites directory for new interactive shells
 [[ -o interactive ]] && cd ~/Sites
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/victor/Library/Application Support/Herd/config/php/84"
+
+
+# Herd injected PHP binary.
+export PATH="/Users/victor/Library/Application Support/Herd/bin":$PATH
