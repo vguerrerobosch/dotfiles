@@ -9,6 +9,22 @@ for file in "$DOTFILES"/*.zsh; do
   source "$file"
 done
 
+# Zsh navigation
+setopt AUTO_CD
+
+# Zsh completion
+autoload -Uz compinit
+compinit
+
+# Load history-search functions
+autoload -Uz up-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+# Make ↑/↓ use them
+bindkey '^[[A' up-line-or-beginning-search
+bindkey '^[[B' down-line-or-beginning-search
+
 # Starship prompt
 eval "$(starship init zsh)"
 
