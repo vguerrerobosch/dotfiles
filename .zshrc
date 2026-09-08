@@ -14,11 +14,14 @@ setopt AUTO_CD
 
 # Zsh completion
 autoload -Uz compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 compinit
 
 # Load history-search functions
 autoload -Uz up-line-or-beginning-search
 zle -N up-line-or-beginning-search
+
+autoload -Uz down-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
 # Make ↑/↓ use them
